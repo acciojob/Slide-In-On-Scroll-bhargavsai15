@@ -227,10 +227,10 @@
       })
       
       activeImagelist.forEach(image=>{
-        image.classList.add('active');
+        image.className=image.className+' active';
       })
     }
-    
+
     const callNow=debounce(callback);
     document.addEventListener('scroll',callNow);
 
