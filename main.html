@@ -223,7 +223,7 @@
       }).filter(image=>{
         const rect=image.getBoundingClientRect();
 
-        return rect.top>=0 && rect.top<=window.innerHeight-400;
+        return rect.top>=0 && rect.top<=window.innerHeight-image.height;
       })
       
       activeImagelist.forEach(image=>{
